@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  .heading{
+    font-size: 30px;
+  }
+  .login span a{
+    font-size: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color:white;
+    
+  }
+  a:hover{
+    border-bottom: 2px solid white;
+  }
