@@ -1,57 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Forget Password</title>
+        <title>Forgot Password</title>
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
         <style>
-            body{
-                margin: 0;
-                padding: 0;
-                
-                
-            }
             .container{
                 display: flex;
-                align-items: center;
                 justify-content: center;
-                
-                
+                align-items: center;
                 height: 100vh;
-                margin: auto;
-                font-size: 30px;
-
-            }
-            form{
-                display: flex;
-                flex-direction: column;
-                border: 2px solid black;
-                padding: 20px;
-                height: 100px;
                 width: auto;
+            
             }
-            .btn{
-                text-align: center;
-                margin-top: 30px;
+            .border{
+                padding: 30px;
+            }
+            #btn{
+               text-align: center;
 
             }
-            input{
-                margin-left: 30px;
-                height: 30px;
-                width: 200px;
-            }
-            button{
-                padding: 5px;
-                background-color: green;
-                width: 100px;
-            }
-            
         </style>
     </head>
+    
+
     <body>
         <div class="container">
-            <form>
-                <label for="email">Email ID: <input type="email" id="email" name="email" placeholder="test@email.com"></label>
-                <div class="btn"><button>Done</button></div>
-        </form>
+            <div class="border border-2 rounded-2" >
+                <h3>Forgot Password</h2>
+                <form action="">
+                    <dl>
+                        <dt>
+                            <label for="">Email ID:</label>
+                        </dt>
+                        <dd><input type="email" class="form-control" placeholder="text@email.com"></dd>
+                    </dl>
+                   <div id="btn" class="mt-4"> <button class="btn btn-primary">Done</button></div>
+                </form>
+            </div>
         </div>
     </body>
 </html>

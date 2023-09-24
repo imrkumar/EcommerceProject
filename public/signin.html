@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>SignIn</title>
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
         <style>
             body{
                 margin: 0;
@@ -27,14 +28,8 @@
                
             }
             
-            input{
-                height: 25px;
-                margin-left: 20px;
-                
-            }
-            .divinput{
-                margin-bottom: 10px;
-            }
+           
+            
             button{
                width: 100px;
                padding: 5px;
@@ -47,17 +42,19 @@
     </head>
     <body>
         <div class="center">
-        <div class="main">
-          
+        <div class="main border border-2 rounded-2">
+          <h2>Login</h2>
             <div class="divinput">
-                <label for="uname">UserName:</label>
-                <input type="text" id="uname" placeholder="Name">
+                <dl>
+               <dt> <label for="uname">UserName:</label></dt>
+              <dd>  <input type="text" id="uname" placeholder="Name" class="form-control"></dd>
              </div>
              <div class="divinput">
-                <label for="pwd">Password:</label>&nbsp;
-                <input type="password" id="pwd" placeholder="Password">
+               <dt><label for="pwd">Password:</label>&nbsp;</dt> 
+              <dd>  <input type="password" id="pwd" placeholder="Password" class="form-control"></dd>
              </div>
-             <button>Login</button>
+            </dl>
+             <button class="btn btn-primary mb-2">Login</button>
              <p><a href="signup.html">Sign Up</a></p>
              <p><a href="forgetPwd.html">Forget Password?</a></p>
         
