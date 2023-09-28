@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>SignIn</title>
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
         <style>
             body{
                 margin: 0;
@@ -27,14 +28,8 @@
                
             }
             
-            input{
-                height: 25px;
-                margin-left: 20px;
-                
-            }
-            .divinput{
-                margin-bottom: 10px;
-            }
+           
+            
             button{
                width: 100px;
                padding: 5px;
@@ -46,25 +41,24 @@
         </style>
     </head>
     <body>
-      <form action="">
         <div class="center">
-            <div class="main">
-              
-                <div class="divinput">
-                    <label for="uname">UserName:</label>
-                    <input type="text" id="uname" placeholder="Name" name="uname" id="username">
-                 </div>
-                 <div class="divinput">
-                    <label for="pwd">Password:</label>&nbsp;
-                    <input type="password" id="pwd" placeholder="Password" name="pwd">
-                 </div>
-                 <button>Login</button>
-                 <p><a href="signup.html">Sign Up</a></p>
-                 <p><a href="forgetPwd.html">Forget Password?</a></p>
-            
-            </div>
+        <div class="main border border-2 rounded-2">
+          <h2>Login</h2>
+            <div class="divinput">
+                <dl>
+               <dt> <label for="uname">UserName:</label></dt>
+              <dd>  <input type="text" id="uname" placeholder="Name" class="form-control"></dd>
+             </div>
+             <div class="divinput">
+               <dt><label for="pwd">Password:</label>&nbsp;</dt> 
+              <dd>  <input type="password" id="pwd" placeholder="Password" class="form-control"></dd>
+             </div>
+            </dl>
+             <button class="btn btn-primary mb-2">Login</button>
+             <p><a href="signup.html">Sign Up</a></p>
+             <p><a href="forgetPwd.html">Forget Password?</a></p>
+        
         </div>
-      </form>
-      <script src="../script/validation.js"></script>
+    </div>
     </body>
 </html>
