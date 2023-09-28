@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>SignIn</title>
-        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
         <style>
             body{
                 margin: 0;
@@ -28,6 +27,14 @@
                
             }
             
+            input{
+                height: 25px;
+                margin-left: 20px;
+                
+            }
+            .divinput{
+                margin-bottom: 10px;
+            }
             button{
                width: 100px;
                padding: 5px;
@@ -45,7 +52,7 @@
               
                 <div class="divinput">
                     <label for="uname">UserName:</label>
-                    <input type="text" id="uname" placeholder="Name" name="uname">
+                    <input type="text" id="uname" placeholder="Name" name="uname" id="username">
                  </div>
                  <div class="divinput">
                     <label for="pwd">Password:</label>&nbsp;
@@ -58,5 +65,6 @@
             </div>
         </div>
       </form>
+      <script src="../script/validation.js"></script>
     </body>
 </html>
