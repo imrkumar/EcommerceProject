@@ -2,64 +2,78 @@ var ptemplate = Handlebars.compile($("#template").html());
 var productdata=[
 
     {
-        pname:"Causal shirt for Men",
-        price:600,
-        url :"assets/mens_wear/m1.jpg"
+        pname:" Casual Shirt for Men|| Shirt for Men|| Men Stylish Shirt ",
+        price:"₹600",
+        url :"assets/mens_wear/m1.jpg",
+        brand: "Lymio"
+    
     },
     {
-        pname:"Causal shirt for Men",
-        price:500,
-        url :"assets/mens_wear/m2.jpg"
+        pname:"Shirt for Men | Tropical Leaf Printed Rayon Shirts for Men",
+        price:"₹500",
+        url :"assets/mens_wear/m2.jpg",
+        brand: "Leriya Fashion"
     },
     {
-        pname:"",
-        price:700,
-        url :"assets/mens_wear/m3.jpg"
+        pname:"Regular Men's Cotton Designer T-Shirt (EB1T67)",
+        price:"₹700",
+        url :"assets/mens_wear/m3.jpg",
+        brand:"EYEBOGLER"
     },
     {
-        pname:" Cotton shirt for Men",
-        price:650,
-        url :"assets/mens_wear/m4.jpg"
+        pname:" Combo of Men's Cotton Regular Fit Full Sleeve Casual Shirt",
+        price:"₹600",
+        url :"assets/mens_wear/m4.jpg",
+        brand : "Zombom"
     },
     {
-        pname:"Shorts for Men",
-        price:500,
-        url :"assets/mens_wear/m5.jpg"
+        pname:"Men's Super Combed Cotton Checkmate Boxer Shorts ",
+        price:"₹500",
+        url :"assets/mens_wear/m5.jpg",
+        brand :"Chromozome"
     },
     {
-        pname:"Combo Shorts for Men",
-        price:700,
-        url :"assets/mens_wear/m6.jpg"
+        pname:"Stylish Men Multicolored Cotton Shorts-Pack of 2",
+        price:"₹700",
+        url :"assets/mens_wear/m6.jpg",
+        brand :"hotfits"
     },
     {
-        pname:" Stylis shirt for Men ",
-        price:600,
-        url :"assets/mens_wear/m7.jpg"
+        pname:" Shirt for Men || Soft Rayon Multi Printed Shirts for Men ",
+        price:"₹600",
+        url :"assets/mens_wear/m7.jpg",
+        brand :"OM SAI LATEST CREATION"
     },
     {
-        pname:"Combo shirt&shorts for Men",
-        price:900,
-        url :"assets/mens_wear/m8.jpg"
+        pname:"Men's Rayon Shirt And Shorts Combo Suit",
+        price:"₹900",
+        url :"assets/mens_wear/m8.jpg",
+        brand :"N T CREATION"
     },
     {
-        pname:" Slim Fit Stretch Jeans",
-        price:750,
-        url :"assets/mens_wear/m9.jpg"
+        pname:"Men's Skinny Jeans (XCYA01711-B7_Dark Blue",
+        price:"₹900",
+        url :"assets/mens_wear/m9.jpg",
+        brand :"Parx"
     },
     {
-        pname:"Men's Skinny Fit Stretch Jeans",
-        price:900,
-        url :"assets/mens_wear/m10.jpg"
+        pname:"Men's Stretch Jogger Jeans",
+        price:"₹750",
+        url :"assets/mens_wear/m10.jpg",
+        brand :"Neostreak"
+    },
+  
+    {
+        pname:"Men's Regular Fit Causal Trouser",
+        price:"₹600",
+        url :"assets/mens_wear/m11.jpg",
+        brand :"TOPLOT"
     },
     {
-        pname:"Slim Fit Casual Trousers",
-        price:600,
-        url :"assets/mens_wear/m11.jpg"
-    },
-    {
-        pname:"Men Casual Pants",
-        price:500,
-        url :"assets/mens_wear/m12.jpg"
+        pname:"Men's Solid Lycra Slim Fit Stretchable Casual Wear",
+        price:"₹500",
+        url :"assets/mens_wear/m12.jpg",
+        brand :"Boostrix"
     },
 ];
 
