@@ -1,6 +1,6 @@
 var ptemplate = Handlebars.compile($("#template").html());
-var productdata=[
-
+var productdata={
+   mensWears:[
     {
         pname:" Casual Shirt for Men|| Shirt for Men|| Men Stylish Shirt ",
         price:"₹600",
@@ -75,15 +75,35 @@ var productdata=[
         url :"assets/mens_wear/m12.jpg",
         brand :"Boostrix"
     },
-];
+  ],
+//   womenwears:[
+//     {
+//         pname:"Men's Regular Fit Causal Trouser",
+//         price:"₹600",
+//         url :"assets/women_wear/Ww2.jpg",
+//         brand :"TOPLOT"
+//     },
+//     {
+//         pname:"Men's Solid Lycra Slim Fit Stretchable Casual Wear",
+//         price:"₹500",
+//         url :"assets/women_wear/Ww1.jpg",
+//         brand :"Boostrix"
+//     },
+//   ]
+    
+}
 
-for(var i=0;i<productdata.length;i++){
+
+for(var i=0;i<productdata.mensWears.length;i++){
    
-    var temp = ptemplate(productdata[i]);
+    var temp = ptemplate(productdata.mensWears[i]);
     $(".main").append(temp);
 }
 
-    
+
+// var mw = document.getElementById('mw').getAttribute;
+
+// console.log(mw);
 
 
 

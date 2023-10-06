@@ -1,6 +1,9 @@
 var data ={
     name: "admin",
-    password:"admin"
+    password:"admin",
+    name: 'rk',
+    password:'rk'
+
 }
 
 function validate(){

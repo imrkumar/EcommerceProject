@@ -8,6 +8,8 @@ header{
     background-color: black;
     color: white;
     padding: 20px;
+    position: sticky;
+    top: 0;
   }
   .heading{
     font-size: 30px;
@@ -48,3 +50,10 @@ header{
   nav div:hover{
     background-color: #5c8374;
   }
+ a{
+  text-decoration: none;
+ }
+ a:visited{
+  text-decoration: none;
+ }
+ 
