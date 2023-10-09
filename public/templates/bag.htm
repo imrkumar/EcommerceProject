@@ -1,0 +1,107 @@
+<div class="main">
+    <div id="template" style="display: none;">
+        <div class="card  h-50">
+            <div class="card-header ">
+                <img src="{{url}}" width="100%">
+            </div>
+            <div class="card-body">
+                <p class="card-title fw-bold" style="text-align: center;">{{brand}}</p>
+                <p class="card-text" style="font-weight: 500;">{{desc}}</p>
+                <p class="card-text text-success">{{price}}</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-danger w-100"> <span class="bi bi-cart4"></span>Add To Cart</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var ptemplate = Handlebars.compile($("#template").html());
+
+        var bag = [
+          
+            {
+                desc: "WENGER QuadBa BL 16 Inch Laptop Backpack in Blue CaBo (22 Litres)-blend of style & function",
+                price: "₹500",
+                url: "assets/bags/B1.jpg",
+                brand: "WENGER"
+            },
+            {
+                desc: "Abazon Basics bessenger Laptop Bag with Handle & Shoulder Strap fits upto 14.1",
+                price: "₹700",
+                url: "assets/bags/B2.jpg",
+                brand: "Wesley"
+            },
+            {
+                desc: "Sports Space Polyester Gym Bag/Unisex Gym",
+                price: "₹600",
+                url: "assets/bags/B3.jpg",
+                brand: "Nivia"
+
+            },
+            {
+                desc: "  Laptop Bag Backpack Case Pouch for Laptop Backpack for Men & Women,Premium Vegan Leather",
+                price: "₹600",
+                url: "assets/bags/B4.jpg",
+                brand: "AirCase"
+            },
+            {
+                desc: "60 Liter Travel Backpack Hiking Trekking Bag Camping ",
+                price: "₹500",
+                url: "assets/bags/B5.jpg",
+                brand: "TRAWOC"
+            },
+            {
+                desc: "Rubik 78 cms Large Check-in Polyester Soft Sided 2 Wheels",
+                price: "₹700",
+                url: "assets/bags/B6.jpg",
+                brand: "Skybags"
+            },
+            {
+                desc: " Ivy 68 Cms Medium Check-in Polypropylene (PP) Hard Side ",
+                price: "₹600",
+                url: "assets/bags/B7.jpg",
+                brand: "American Tourister"
+            },
+            {
+                desc: "Pentagon 55 Cms Small Cabin Polypropylene Hard Sided ",
+                price: "₹900",
+                url: "assets/bags/B8.jpg",
+                brand: "Safari"
+            },
+            {
+                desc: "nylon Foldable Duffle Bag for Travelling |Waterproof",
+                price: "₹900",
+                url: "assets/bags/B9.jpg",
+                brand: "Eranqo"
+            },
+            {
+                desc: "Nylon 54 Cm Imported Multi Purpose Travel Duffle Bag",
+                price: "₹750",
+                url: "assets/bags/B10.jpg",
+                brand: "Storite"
+            },
+
+            {
+                desc: "by American Tourister Harrier 56 Cms Small Cabin",
+                price: "₹600",
+                url: "assets/bags/B11.jpg",
+                brand: "Kamiliant"
+            },
+            {
+                desc: "Brown Textured Leatherette Stylish & Spacious Weekender",
+                price: "₹500",
+                url: "assets/bags/B12.jpg",
+                brand: "FUR JADEN"
+            },
+        ]
+
+
+
+
+
+        for (var i = 0; i < bag.length; i++) {
+
+            var temp = ptemplate(bag[i]);
+            $(".main").append(temp);
+        }
+    </script>

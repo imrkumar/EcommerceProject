@@ -1,7 +1,7 @@
 
 
 <div class="main" >
-  <div id="template1" style="display: none;">
+  <div id="template" style="display: none;">
     <div class="card  h-50">
      <div class="card-header ">
      <img src="{{url}}"  width="100%" >
@@ -18,7 +18,7 @@
 </div>
   
 <script>
-  var ptemplate = Handlebars.compile($("#template1").html());
+  var ptemplate = Handlebars.compile($("#template").html());
  
        var firstpage=[
              {
@@ -66,7 +66,7 @@
              {
                  url :"assets/Shoes/S1.jpg",
                  desc:"SEE MORE",
-                 call:"product('Shoe')" 
+                 call:"product('shoes ')" 
              },
              {
                  url :"assets/Sunglasses/S1.jpg",

@@ -6,7 +6,7 @@
       </div>
       <div class="card-body">
          <p class="card-title fw-bold" style="text-align: center;">{{brand}}</p>
-        <p class="card-text" style="font-weight: 500;">{{pname}}</p>
+        <p class="card-text" style="font-weight: 500;">{{desc}}</p>
         <p class="card-text text-success">{{price}}</p>
       </div>
       <div class="card-footer">
@@ -17,80 +17,81 @@
   <script>
     var ptemplate = Handlebars.compile($("#template").html());
    
-         var  menswears=[
+         var  women=[
                {
-                   pname:" Casual Shirt for Men|| Shirt for Men|| Men Stylish Shirt ",
+                   desc:"Women's Cotton Blend Printed Anarkali Kurta with Palazzo",
                    price:"₹600",
-                   url :"assets/mens_wear/m1.jpg",
-                   brand: "Lymio"
+                   url :"assets/women_wear/Ww1.jpg",
+                   brand: "GoSriKi"
                
                },
                {
-                   pname:"Shirt for Men | Tropical Leaf Printed Rayon Shirts for Men",
+                   desc:"Women's Georgette Digital Floral Printed Gown Dress",
                    price:"₹500",
-                   url :"assets/mens_wear/m2.jpg",
-                   brand: "Leriya Fashion"
+                   url :"assets/women_wear/Ww2.jpg",
+                   brand: "MEERA FAB"
                },
                {
-                   pname:"Regular Men's Cotton Designer T-Shirt (EB1T67)",
+                   desc:"Women Yoke Design Kurta Set",
                    price:"₹700",
-                   url :"assets/mens_wear/m3.jpg",
-                   brand:"EYEBOGLER"
+                   url :"assets/women_wear/Ww3.jpg",
+                   brand:"INDO ERA"
                },
                {
-                   pname:" Combo of Men's Cotton Regular Fit Full Sleeve Casual Shirt",
+                   desc:"  Women Kurta and Palazzo",
                    price:"₹600",
-                   url :"assets/mens_wear/m4.jpg",
-                   brand : "Zombom"
+                   url :"assets/women_wear/Ww4.jpg",
+                   brand : "ANNI DESIGNER"
                },
                {
-                   pname:"Men's Super Combed Cotton Checkmate Boxer Shorts ",
+                   desc:"Women's Floral Printed Cotton Top",
                    price:"₹500",
-                   url :"assets/mens_wear/m5.jpg",
-                   brand :"Chromozome"
-               },
+                   url :"assets/women_wear/Ww5.jpg",
+                   brand :"rytras"
+               }, 
                {
-                   pname:"Stylish Men Multicolored Cotton Shorts-Pack of 2",
+                   desc :"Women Casual Regular Sleeves Printed Top",
                    price:"₹700",
-                   url :"assets/mens_wear/m6.jpg",
-                   brand :"hotfits"
+                   url :"assets/women_wear/Ww6.jpg",
+                   brand :"Sheetal Associates"
                },
                {
-                   pname:" Shirt for Men || Soft Rayon Multi Printed Shirts for Men ",
+                   desc:"Madnoo Women`s Casual Printed Top",
+                   price:"₹900",
+                   url :"assets/women_wear/Ww7.jpg",
+                   brand :"Harpa"
+               },
+               {
+                   desc:"Printed Georgette Women Wear Long Skirt (Free Size) ",
                    price:"₹600",
-                   url :"assets/mens_wear/m7.jpg",
-                   brand :"OM SAI LATEST CREATION"
+                   url :"assets/women_wear/Ww8.jpg",
+                   brand :"FESQVI"
                },
+              
                {
-                   pname:"Men's Rayon Shirt And Shorts Combo Suit",
+                   desc:"Women's Printed Skirt All",
                    price:"₹900",
-                   url :"assets/mens_wear/m8.jpg",
-                   brand :"N T CREATION"
+                   url :"assets/women_wear/Ww9.jpg",
+                   brand :"Generic"
                },
                {
-                   pname:"Men's Skinny Jeans (XCYA01711-B7_Dark Blue",
-                   price:"₹900",
-                   url :"assets/mens_wear/m9.jpg",
-                   brand :"Parx"
-               },
-               {
-                   pname:"Men's Stretch Jogger Jeans",
+                   desc :"Women Women's Cotton Regular Fit T-Shirt",
                    price:"₹750",
-                   url :"assets/mens_wear/m10.jpg",
-                   brand :"Neostreak"
+                   url :"assets/women_wear/Ww10.jpg",
+                   brand :"Amazon Brand - Symbol"
                },
              
                {
-                   pname:"Men's Regular Fit Causal Trouser",
+                   desc :"Womens Cotton Round Neck Tshirt",
                    price:"₹600",
-                   url :"assets/mens_wear/m11.jpg",
-                   brand :"TOPLOT"
+                   url :"assets/women_wear/Ww11.jpg",
+                   brand :"THE DRY STATE"
                },
                {
-                   pname:"Men's Solid Lycra Slim Fit Stretchable Casual Wear",
+                   desc:"Cotton Blend Printed Half Sleeve Oversized T-Shirts",
                    price:"₹500",
-                   url :"assets/mens_wear/m12.jpg",
-                   brand :"Boostrix"
+                   url :"assets/women_wear/Ww12.jpg",
+                   brand :"LEOTUDE"
                },
              ]
            
@@ -98,9 +99,9 @@
            
            
            
-           for(var i=0;i<menswears.length;i++){
+           for(var i=0;i<women.length;i++){
               
-               var temp = ptemplate(menswears[i]);
+               var temp = ptemplate(women[i]);
                $(".main").append(temp);
            }
 </script>  

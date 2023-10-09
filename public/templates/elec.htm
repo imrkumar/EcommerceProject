@@ -1,0 +1,106 @@
+<div class="main">
+    <div id="template" style="display: none;">
+        <div class="card  h-50">
+            <div class="card-header ">
+                <img src="{{url}}" width="100%">
+            </div>
+            <div class="card-body">
+                <p class="card-title fw-bold" style="text-align: center;">{{brand}}</p>
+                <p class="card-text" style="font-weight: 500;">{{desc}}</p>
+                <p class="card-text text-success">{{price}}</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-danger w-100"> <span class="bi bi-cart4"></span>Add To Cart</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var ptemplate = Handlebars.compile($("#template").html());
+
+        var women = [
+            {
+                desc: "Women's Georgette Digital Floral Printed Gown Dress",
+                price: "₹600",
+                url: "assets/bags_wear/Ww1.jpg",
+                brand: "Shasmi"
+
+            },
+            {
+                desc: "",
+                price: "₹500",
+                url: "assets/bags_wear/Ww1.jpg",
+                brand: ""
+            },
+            {
+                desc: "",
+                price: "₹700",
+                url: "assets/bags_wear/Ww1.jpg",
+                brand: ""
+            },
+            {
+                desc: " ",
+                price: "₹600",
+                url: "assets/bags_wear/m4.jpg",
+                brand: ""
+            },
+            {
+                desc: " ",
+                price: "₹500",
+                url: "assets/bags_wear/m5.jpg",
+                brand: ""
+            },
+            {
+                desc: "",
+                price: "₹700",
+                url: "",
+                brand: ""
+            },
+            {
+                desc: "  ",
+                price: "₹600",
+                url: "assets/bags_wear/m7.jpg",
+                brand: ""
+            },
+            {
+                desc: "",
+                price: "₹900",
+                url: "assets/bags_wear/m8.jpg",
+                brand: ""
+            },
+            {
+                desc: "",
+                price: "₹900",
+                url: "assets/bags_wear/m9.jpg",
+                brand: ""
+            },
+            {
+                desc: "",
+                price: "₹750",
+                url: "assets/bags_wear/m10.jpg",
+                brand: ""
+            },
+
+            {
+                desc: "",
+                price: "₹600",
+                url: "assets/bags_wear/m11.jpg",
+                brand: ""
+            },
+            {
+                desc: "",
+                price: "₹500",
+                url: "assets/bags_wear/m12.jpg",
+                brand: ""
+            },
+        ]
+
+
+
+
+
+        for (var i = 0; i < women.length; i++) {
+
+            var temp = ptemplate(women[i]);
+            $(".main").append(temp);
+        }
+    </script>

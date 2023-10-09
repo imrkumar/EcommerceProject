@@ -10,7 +10,37 @@ var product=(type)=>{
         
         case'women':
             details="templates/women.htm"
-          break;
+           break;
+        case'bag':
+            details="templates/bag.htm"
+           break;
+        case'elec':
+           details="templates/elec.htm"
+           break;
+        case'fruit':
+           details="templates/fruit.htm"
+           break;
+        case'glasses':
+           details="templates/slasses.htm"
+           break;
+        case'kid':
+           details="templates/kid.htm"
+           break;
+        case'laptop':
+           details="templates/laptop.htm"
+           break;
+        case'mob':
+           details="templates/mob.htm"
+           break;
+        case'shoes':
+           details="templates/shoes.htm"
+           break;
+        case'veg':
+           details="templates/veg.htm"
+           break;
+        case'watch':
+           details="templates/watch.htm"
+           break;
      }
     
      page(details);

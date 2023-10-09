@@ -1,0 +1,106 @@
+<div class="Fain">
+    <div id="teFplate" style="display: none;">
+        <div class="card  h-50">
+            <div class="card-header ">
+                <iFg src="{{url}}" width="100%">
+            </div>
+            <div class="card-body">
+                <p class="card-title fw-bold" style="text-align: center;">{{brand}}</p>
+                <p class="card-text" style="font-weight: 500;">{{desc}}</p>
+                <p class="card-text text-success">{{price}}</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-danger w-100"> <span class="bi bi-cart4"></span>Add To Cart</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var pteFplate = Handlebars.compile($("#template").html());
+
+        var fruit = [
+            {
+                desc: "Fresh Baby Apple Shimla, 1kg (10-12 Pc)",
+                price: "₹130",
+                url: "assets/fruits_wear/F1.jpg",
+                brand: "Apple"
+
+            },
+            {
+                desc: "Fresh Pomegranate, 4 Pieces",
+                price: "₹199",
+                url: "assets/fruits_wear/F2.jpg",
+                brand: "Pomegranate"
+            },
+            {
+                desc: "Fresh Baby Orange Nagpur, 1kg",
+                price: "₹129",
+                url: "assets/fruits_wear/F3.jpg",
+                brand: "Orange"
+            },
+            {
+                desc: "Fresh Dragon Fruit Imported (White) Approx. 200 gm/Pc ",
+                price: "₹157",
+                url: "assets/fruits_wear/F4.jpg",
+                brand: "Dragon"
+            },
+            {
+                desc: " Fresh Banana Robusta, 1kg",
+                price: "₹60",
+                url: "assets/fruits_wear/F5.jpg",
+                brand: "Banana"
+            },
+            {
+                desc: "Fresh Mosambi, 6 Pieces (800 to 1000 gm)",
+                price: "₹59",
+                url: "assets/fruits_wear/F6.jpg",
+                brand: "Mosambi"
+            },
+            {
+                desc: " Fresh Papaya medium, 1 Piece (800gm) ",
+                price: "₹68",
+                url: "assets/fruits_wear/F7.jpg",
+                brand: "Papaya"
+            },
+            {
+                desc: "Fresh Kiwi Green, 3 Pcs Pack",
+                price: "₹129",
+                url: "assets/fruits_wear/F8.jpg",
+                brand: "Kiwi"
+            },
+            {
+                desc: "Fresh Pineapple, 1 pc (Approx. 800g-1000g)",
+                price: "₹109",
+                url: "assets/fruits_wear/F9.jpg",
+                brand: "Pineapple"
+            },
+            {
+                desc: "Fresh Thai Guava Indian, 2Pc",
+                price: "₹120",
+                url: "assets/fruits_wear/F10.jpg",
+                brand: "Guava"
+            },
+
+            {
+                desc: "Fresh Water Melon - Kiran, 1 Pc",
+                price: "₹98",
+                url: "assets/fruits_wear/F11.jpg",
+                brand: "Melon"
+            },
+            {
+                desc: "Green view Fuerte Avocado/alligator pear Clone Type",
+                price: "₹500",
+                url: "assets/fruits_wear/F12.jpg",
+                brand: "Avocado"
+            },
+        ]
+
+
+
+
+
+        for (var i = 0; i < fruit.length; i++) {
+
+            var temp = pteFplate(fruit[i]);
+            $(".main").append(temp);
+        }
+    </script>
