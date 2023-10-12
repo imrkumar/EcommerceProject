@@ -18,3 +18,4 @@ function validate(){
         msg.innerHTML="Invalid credentials";
     }
 }
+

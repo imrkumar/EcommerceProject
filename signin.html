@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SignIn</title>
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>      
+
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                font-size: 20px;
+            }
+            .main{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid black;
+                padding: 30px;
+                flex-direction: column;
+                
+            }
+            .center{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: auto;
+                height: 100vh;
+               
+            }
+           
+             button{
+               width: 100px;
+               padding: 5px;
+               margin-top: 30px;
+            }
+            p{
+                margin-bottom: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="center">
+        <div class="main2 border border-2 rounded-2">
+          <h2>Login</h2>
+            <div class="divinput">
+                <dl>
+               <dt> <label for="uname">UserName:</label></dt>
+              <dd>  <input type="text" id="uname" placeholder="Name" class="form-control" ></dd>
+             </div>
+             <div class="divinput">
+               <dt><label for="pwd">Password:</label>&nbsp;</dt> 
+              <dd>  <input type="password" id="pwd" placeholder="Password" class="form-control"></dd>
+             </div>
+            </dl>
+             <button   class="btn btn-primary mb-2" id="loginbtn" onclick="validate()">Login</button>
+             <div id="msg"></div>
+             <p><a href="signup.html">Sign Up</a></p>
+             <p><a href="forgetPwd.html">Forget Password?</a></p>
+
+        
+        </div>
+    </div>
+    <script src="../script/validation.js"></script>
+    </body>
+</html>

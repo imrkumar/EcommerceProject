@@ -23,9 +23,10 @@ body{
   }
   a:hover{
     border-bottom: 2px solid white;
+    cursor: pointer;
   }
 
-   /* main{
+   main{
     display: grid;
     grid-template-columns: 2fr 10fr;
   }
@@ -56,44 +57,8 @@ body{
  a:visited{
   text-decoration: none;
  }
- */
+
 
  
  
-
-.main{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-img{
-  height: 311px;
-
-}
-.card{
-  width: 292px;
-  margin: 5px;
-}
-.card-body{
-  height: 150px;
-}
-footer{
-     font-size: 20px;
-    background-color: black;
-    color: white;
-    padding: 12px;
-    text-align: center;
-    border: 1px;
-
-
-}
- .back span a{
-  position: absolute;
-  left: 10px;
-  font-size: 20px;
-  
-  text-decoration: none;
-  color:white;
-}
 
